@@ -5,20 +5,39 @@
     <title>storage</title>
     <style>
     #bk{color:#87AFC7;}
-      h1{text-align: center; font-size: 60px; }
+    body{margin: 0px;}
+      h1{text-align: center; font-size: 50px; border-bottom:1px solid gray; padding: 20px; margin: 0px;}
       a {text-decoration: none;}
-      .ts {color: paleturquoise; border: 2px double #93FFE8; padding: 4px; margin: 3px; display: block; width: 50px;}
-      .pt {color: lightskyblue; border: 2px double  #ADDFFF; padding: 4px; margin: 3px; display: block; width: 40px;}
-      .sh {color: cornflowerblue; border: 2px double cornflowerblue; padding: 4px; margin: 3px; display: block; width: 40px;}
+
+      ul{
+        border-right:1px solid gray; width: 100px; margin: 0px; padding: 30px;padding-left: 36px;
+      }
+      #grid {display: grid;
+        grid-template-columns: 180px 1fr}
+      #grid ul {padding-left: 36px;}
+    #main{padding-left: 15px;}
+    @media(max-width:700px)  {
+      #grid{display: block;}
+      ul{border-right: none;}
+      h1{border-bottom: none;}
+
+    }
+
     </style>
   </head>
 
   <body>
 <h1><a href="home.html"id="bk">storage</a></h1>
-<ul>
-  <li><a href="t-shirt.html" title="T-shirt link" class="ts">T-shirt</a></li>
-  <li><a href="pants.html" title="pants link" class="pt">pants</a></li>
-  <li><a href="shoes.html" title="shoes link" class="sh">shoes</a></li>
-</ul>
+<div id="grid">
+    <ul>
+    <li><a href="t-shirt.html" title="T-shirt link" style=color:paleturquoise;>T-shirt</a></li>
+    <li><a href="pants.html" title="pants link" style=color:lightskyblue;>pants</a></li>
+    <li><a href="shoes.html" title="shoes link" style=color:cornflowerblue;>shoes</a></li>
+  </ul>
+ <div id="main">
+  <h2>Best</h2>
+  <p>나는 왜 안되는 것 인가 ?</p>
+ </div>
+</div>
   </body>
 </html>
